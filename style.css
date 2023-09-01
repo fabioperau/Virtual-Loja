@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Rock+Salt&display=swap');
+
+:root{
+    --cor0: #4EDAF2;
+    --cor1: #05CCF0;
+    --cor2: #03A0BD;
+    --cor3: #026070;
+    --cor4: #246570;
+    --cor5: white;
+    --cor6: #5a124a;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+
+body,button,input{
+    font: 400 16px "roboto", sans-serif;
+}
+
+/* Pagina sobre*/
+/* Header*/
+
+.main-header{
+    background-image: url("imagem/backgraund03.jpg");
+    background-position: 66% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-nav{
+    width: 100%;
+}
+.header-list-container{
+    padding: 16px 0; 
+}
+.nav-item{
+    text-transform: uppercase;
+    color: var(--cor5);
+    transition: 0.2s;
+}
+.nav-item:hover{
+    color: rgb(255, 255, 255, 0.7);
+}
+.nav-item a{
+    color: inherit;
+    text-decoration: none;
+}
+hr{
+    width: 100%;
+}
+.movie-title-large{
+    font-family: "Rock Salt", cursive;
+    color: var(--cor5);
+    font-size: 54px;
+}
+/* Main*/
+
+.main-section{
+    padding: 40px 0 64px;
+}
+.container{
+    max-width: 600px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.section-title{
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.movie-imagem{
+    float: left;
+    width: 62%;
+    margin: 0 20px 10px 0;
+    border-radius: 8%;
+}
+.section-descrisao{
+    color: #777;
+}
+.section-descrisao + .section-descrisao{
+    margin-top: 16px;
+}
+/* Footer*/
+
+.main-footer{
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor6));
+    padding: 16px 0;
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movie-title-medium{
+    font-family: "Rock Salt", cursive;
+    color: white;
+    font-size: 26px;
+}
+.list-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-item{
+    width: 25px;
+    margin: 10px;
+    
+}
+
+/* Pagina index*/
+.traile-button{
+    color: white;
+    font-weight: bold;
+    border: 2px solid var(--cor6);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 2s;
+}
+.traile-button:hover{
+    background-color: rgb(255, 0, 212);
+}
+.traile-button-player{
+    color: var(--cor6);
+    margin: 24px 0;
+    border: 2px solid var(--cor6);
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 2s;
+}
+.traile-button-player:hover{
+    color: var(--cor5);
+    background-color: rgb(255, 0, 212);
+}
+.show-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show-item + .show-item{
+    border-top: 1px solid #333;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+.show-date{
+    width: 13%;
+}
+.show-city{
+    width: 28%;
+}
+.show-place{
+    width: 35%;
+}
+.buy-ticket{
+    width: 20%;
+    background-color: var(--cor6);
+    color: var(--cor5);
+    font-weight: bold;
+    border: 2px solid var(--cor6);
+    border-radius: 6px;
+    padding: 4px 2px;
+    transition: 0.2s;
+}
+.buy-ticket:hover{
+    background-color: transparent;
+    color: var(--cor6);
+}
+
+/* Main */
+
+.normal-section +  .normal-section{
+    margin-top: 80px;
+}
+
+.Produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.movie-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produto-title{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.produto-image{
+    width: 240px;
+    height: 144px;
+}
+.produto-price-container{
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.produto-price{
+    margin-right: 12px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+.button-hover-background{
+    background-color: var(--cor6);
+    color: var(--cor5);
+    border: 2px solid var(--cor6);
+    border-radius: 6px;
+    padding: 4px 2px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.button-hover-background:hover{
+    background-color: transparent;
+    color: var(--cor6);
+}
+
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-head-item{
+    text-align: start;
+    border-bottom: 1px solid #959595;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+.second-col,.third-col{
+    width: 26%;
+}
+.cart-produto td{
+    padding: 8px 0;
+}
+.produto-identification{
+    display: flex;
+    align-items: center;
+}
+.cart-produto-image{
+    width: 120px;
+    height: 70px;
+}
+.cart-produto-title{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.cart-produto-price{
+    font-family: "Raleway" sans-serif;
+}
+.produto-qtd-input{
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid var(--cor0);
+    text-align: center;
+    background-color: #eee;
+}
+.remove-produto-buton{
+    margin-left: 12px;
+    background-color: #ff0000;
+    color: var(--cor5);
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+.remove-produto-buton:hover{
+    filter: brightness(0.8);
+}
+
+.cart-total-cantainer{
+    border-top: 1px solid #959595;
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+}
+.cart-total-cantainer strong{
+    margin-right: 12px;
+}
+.button-finalizar{
+    display: flex;
+    margin: 24px auto 0;
+    background-color: var(--cor0);
+    counter-reset: var(--cor5);
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.button-finalizar:hover{
+    filter: brightness(0.8);
+}
+
+/* Responsivel*/
+
+@media (max-width: 588px){
+    .movie-title-large{
+        font-size: 36px;
+    }
+    .movie-imagem{
+        width: 40%;
+    }
+    .main-footer-container{
+        flex-direction: column;
+    }
+    .show-item{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .show-date,.show-place,.show-city{
+        width: 32%;
+        padding: 4px;
+    }
+    
+    .buy-ticket{
+        width: 60%;
+        margin-top: 12px;
+        padding: 12px 2px;
+    }
+    .show-item + .show-item{
+        margin-top: 12px;
+    }
+    .Produtos-container{
+        justify-content: center;
+    }
+    .produto-identification{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cart-produto-title{
+        margin-top: 6px;
+    }
+    .produto-qtd-input{
+        display: block;
+        margin: 0 auto;
+    }
+    .remove-produto-buton{
+        display: block;
+        margin: 8px auto 0;
+    }
+}
+
+   

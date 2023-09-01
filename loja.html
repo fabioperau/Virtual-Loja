@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script async src="loja.js"></script>
+    <title>Loja Virtual</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav container">
+            <ul class="header-list-container list-container" class="nav-item">
+                <li class="nav-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="loja.html">Loja</a>                  
+                </li>
+                <li class="nav-item">
+                    <a href="sobre.html">Sobre</a>           
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <h1 class="movie-title-large">Loja</h1>
+    </header>
+
+    <main class="main-section">
+        <section class="container normal-section">
+            <h2 class="section-title">Produtos</h2>
+            <div class="Produtos-container">
+              <div class="movie-produto">
+                <strong class="produto-title">Produtos 1</strong>
+                <img class="produto-image" src="imagem/icon-livro.png" alt="livro">
+                <div class="produto-price-container">
+                    <span class="produto-price">R$ 29.99</span>
+                    <button  class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                </div>
+              </div>
+              <div class="movie-produto">
+                <strong class="produto-title">Produtos 2</strong>
+                <img class="produto-image" src="imagem/icone propaganda.png" alt="propaganda">
+                <div class="produto-price-container">
+                    <span class="produto-price">R$ 39.99</span>
+                    <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                </div>
+              </div>
+              <div class="movie-produto">
+                <strong class="produto-title">Produtos 3</strong>
+                <img class="produto-image" src="imagem/icon-revista.png" alt="revista">
+                <div class="produto-price-container">
+                    <span class="produto-price">R$ 19.99</span>
+                    <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                </div>
+              </div>
+              <div class="movie-produto">
+                <strong class="produto-title">Produtos 4</strong>
+                <img class="produto-image" src="imagem/icon cx pra site.png" alt="caixa">
+                <div class="produto-price-container">
+                    <span class="produto-price">R$ 79.99</span>
+                    <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section class="container normal-section">
+            <h2 class="section-title">imagem</h2>
+            <div class="Produtos-container">
+                <div class="movie-produto">
+                <strong class="produto-title">Cartão</strong>
+                <img class="produto-image" src="imagem/cartão de visita1.png" alt="cartão">
+                <div class="produto-price-container">
+                    <span class="produto-price">R$ 39.99</span>
+                    <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                </div>
+              </div>
+              <div class="movie-produto">
+              <strong class="produto-title">Cartão 2</strong>
+                <img class="produto-image" src="imagem/dani cartão de visita frente pronto.png" alt="cartão">
+                <div class="produto-price-container">
+                    <span class="produto-price">R$ 69.99</span>
+                    <button class="button-hover-background" type="button">Adicionar ao carrinho</button>
+                </div>
+                </div>
+              </div>
+        </section>
+        <section class="container normal-section">
+            <h2 class="section-title">carrinho</h2>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th class="table-head-item first-col">Item</th>
+                        <th class="table-head-item second-col">Preço</th>
+                        <th class="table-head-item third-col">Quantidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- <tr class="cart-produto">
+                        <td class="produto-identification">
+                            <img class="cart-produto-image" src="imagem/cartão de visita1.png" alt="cartão">
+                            <strong class="cart-produto-title">Cartão</strong>
+                        </td>
+                        <td>
+                            <span class="cart-produto-price">R$ 39.99</span>
+                        </td>
+                        <td>
+                            <input class="produto-qtd-input" type="number" value="1" min="0">
+                            <button class="remove-produto-buton" type="button">Remover</button>
+                        </td>
+                    </tr>
+                    <tr class="cart-produto">
+                        <td class="produto-identification">
+                            <img class="cart-produto-image" src="imagem/icon-livro.png" alt="livro">
+                            <strong class="cart-produto-title">Livro</strong>
+                        </td>
+                        <td>
+                            <span class="cart-produto-price">R$ 29.99</span>
+                        </td>
+                        <td>
+                            <input class="produto-qtd-input" type="number" value="1" min="0">
+                            <button class="remove-produto-buton" type="button">Remover</button>
+                        </td>
+                    </tr> -->
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="cart-total-cantainer">
+                            <strong>Total</strong>
+                            <span>R$ 00.00</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <button class="button-finalizar" type="button">Finalizar Compra</button>
+        </section>
+        
+    </main>
+</body>
+<footer class="main-footer">
+    <div class="container main-footer-container">
+        <h3 class="movie-title-medium">Loja Virtual</h3>
+        <ul class="list-container">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                <img class="footer-item" src="imagem/iconmonstr-facebook-5-240.png" alt="facebook logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                <img class="footer-item" src="imagem/iconmonstr-instagram-11-240.png" alt="instagram">
+                </a>
+            </li>
+            <li >
+                <a href="https://web.whatsapp.com/" target="_blank">
+                <img class="footer-item" src="imagem/iconmonstr-whatsapp-1-240.png" alt="whatsap">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</html>
+
